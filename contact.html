@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haluk Özer | İletişim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg class="mask-icon" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l5.5-3.5 5.5 3.5V11h-11v6.5z"/> 
+            </svg>
+            <span>Haluk Özer</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+            <li><a href="contact.html" class="active">İletişim</a></li>
+        </ul>
+        <div class="nav-actions"><button class="menu-btn">☰</button></div>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h1>Bana Ulaşın</h1>
+            <p>Aşağıdaki formu doldurarak benimle iletişime geçebilirsiniz.</p>
+            
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="name">Ad Soyad:</label>
+                    <input type="text" id="name" placeholder="Adınızı giriniz...">
+                </div>
+                <div class="input-group">
+                    <label for="email">E-posta Adresi:</label>
+                    <input type="email" id="email" placeholder="ornek@mail.com">
+                </div>
+                <div class="input-group">
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" rows="4" placeholder="Mesajınızı buraya yazınız..."></textarea>
+                </div>
+                <button type="submit" id="submitBtn">Mesajı Gönder</button>
+            </form>
+            <div id="statusMessage"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
